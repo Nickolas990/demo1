@@ -1,4 +1,4 @@
-package com.testcase.testcasecgm.domain;
+package com.example.demo.domain;
 
 
 

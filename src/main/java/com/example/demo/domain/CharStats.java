@@ -1,4 +1,4 @@
-package com.testcase.testcasecgm.domain;
+package com.example.demo.domain;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class CharStats {
     private Long count = 1L;
-    private Long averageLength = 1L;
+    private Double averageLength = 1.0;
 
     private Double averageChain = 1.0;
 

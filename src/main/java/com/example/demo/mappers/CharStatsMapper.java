@@ -1,8 +1,9 @@
-package com.testcase.testcasecgm.mappers;
+package com.example.demo.mappers;
 
-import com.testcase.testcasecgm.domain.CharStats;
-import com.testcase.testcasecgm.dto.CharStatsDTO;
-import com.testcase.testcasecgm.interfaces.Mapper;
+
+import com.example.demo.domain.CharStats;
+import com.example.demo.dto.CharStatsDTO;
+import com.example.demo.interfaces.Mapper;
 import org.springframework.stereotype.Component;
 
 @Component

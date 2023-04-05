@@ -1,9 +1,10 @@
-package com.testcase.testcasecgm.controller;
+package com.example.demo.controller;
 
 
-import com.testcase.testcasecgm.domain.Analyser;
-import com.testcase.testcasecgm.dto.ApplicationStatisticsDTO;
-import com.testcase.testcasecgm.services.AnalysingService;
+
+import com.example.demo.domain.Analyser;
+import com.example.demo.dto.ApplicationStatisticsDTO;
+import com.example.demo.services.AnalysingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;

@@ -1,14 +1,16 @@
-package com.testcase.testcasecgm.mappers;
+package com.example.demo.mappers;
 
-import com.testcase.testcasecgm.domain.ApplicationStatistics;
-import com.testcase.testcasecgm.domain.CharStats;
-import com.testcase.testcasecgm.dto.ApplicationStatisticsDTO;
-import com.testcase.testcasecgm.interfaces.Mapper;
+
+import com.example.demo.domain.ApplicationStatistics;
+import com.example.demo.domain.CharStats;
+import com.example.demo.dto.ApplicationStatisticsDTO;
+import com.example.demo.interfaces.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
 
 @Component
 public class ApplicationStatisticsMapper implements Mapper<ApplicationStatistics, ApplicationStatisticsDTO> {

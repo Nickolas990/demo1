@@ -1,12 +1,13 @@
-package com.testcase.testcasecgm.services;
+package com.example.demo.services;
 
 
-import com.testcase.testcasecgm.domain.Analyser;
-import com.testcase.testcasecgm.domain.ApplicationStatistics;
-import com.testcase.testcasecgm.domain.CharStats;
-import com.testcase.testcasecgm.domain.Value;
-import com.testcase.testcasecgm.dto.ApplicationStatisticsDTO;
-import com.testcase.testcasecgm.interfaces.Mapper;
+
+import com.example.demo.domain.Analyser;
+import com.example.demo.domain.ApplicationStatistics;
+import com.example.demo.domain.CharStats;
+import com.example.demo.domain.Value;
+import com.example.demo.dto.ApplicationStatisticsDTO;
+import com.example.demo.interfaces.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -74,7 +75,7 @@ public class AnalysingService {
                 charStats.setSumOfLengths(charStats.getSumOfLengths() + string.length());
                 charStats.setCount(charStats.getCount() + 1);
                 charStats.setAverageChain(charStats.getSumOfChains()/charStats.getCount());
-                charStats.setAverageLength(charStats.getSumOfLengths()/charStats.getCount());
+                charStats.setAverageLength((double)charStats.getSumOfLengths()/charStats.getCount());
             }
             stats.put(entry.getKey(), charStats);
         }
