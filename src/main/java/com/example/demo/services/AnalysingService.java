@@ -57,12 +57,14 @@ public class AnalysingService {
 
             prevChar = string.charAt(i);
         }
+
         countGlobalStatistics(analyser, string);
 
         return analyser;
     }
 
-    private void countGlobalStatistics(Analyser analyser, String string) {
+
+    private synchronized void countGlobalStatistics(Analyser analyser, String string) {
         ConcurrentHashMap <Character, CharStats> stats = applicationStatistics.getStats();
         for (Map.Entry<Character, Value> entry : analyser.getValues().entrySet()) {
             CharStats charStats;
