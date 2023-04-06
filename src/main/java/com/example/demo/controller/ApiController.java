@@ -8,6 +8,7 @@ import com.example.demo.services.AnalysingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,7 @@ public class ApiController {
         this.analysingService = analysingService;
     }
 
+    @Async
     @GetMapping(value = "/analyse/{input_string}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Analyser> analyse(@PathVariable("input_string") String inputString) {
            return ResponseEntity.ok(analysingService.analysing(inputString));

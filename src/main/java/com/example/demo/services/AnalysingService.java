@@ -9,12 +9,14 @@ import com.example.demo.domain.Value;
 import com.example.demo.dto.ApplicationStatisticsDTO;
 import com.example.demo.interfaces.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Service
+@Scope("prototype")
 public class AnalysingService {
 
     private final ApplicationStatistics applicationStatistics;
@@ -64,13 +66,10 @@ public class AnalysingService {
     }
 
 
-    private synchronized void countGlobalStatistics(Analyser analyser, String string) {
+    private void countGlobalStatistics(Analyser analyser, String string) {
         ConcurrentHashMap <Character, CharStats> stats = applicationStatistics.getStats();
         for (Map.Entry<Character, Value> entry : analyser.getValues().entrySet()) {
-            CharStats charStats;
-            if (!stats.containsKey(entry.getKey())) {
-                charStats = new CharStats();
-            } else {
+            stats.computeIfPresent(entry.getKey(), (character, charStats)  -> {
                 Value value = entry.getValue();
                 charStats = stats.get(entry.getKey());
                 charStats.setSumOfChains(charStats.getSumOfChains() + value.getChains());
@@ -78,10 +77,10 @@ public class AnalysingService {
                 charStats.setCount(charStats.getCount() + 1);
                 charStats.setAverageChain(charStats.getSumOfChains()/charStats.getCount());
                 charStats.setAverageLength((double)charStats.getSumOfLengths()/charStats.getCount());
-            }
-            stats.put(entry.getKey(), charStats);
+                return charStats;
+            });
+            stats.computeIfAbsent(entry.getKey(), character -> new CharStats());
         }
-
     }
 
     public ApplicationStatisticsDTO getApplicationStatistics() {
