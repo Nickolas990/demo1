@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class ApiController {
-    AnalysingService analysingService;
+     private AnalysingService analysingService;
 
     @Autowired
     public ApiController(AnalysingService analysingService) {

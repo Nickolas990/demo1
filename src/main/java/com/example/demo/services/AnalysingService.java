@@ -9,6 +9,7 @@ import com.example.demo.domain.Value;
 import com.example.demo.dto.ApplicationStatisticsDTO;
 import com.example.demo.interfaces.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 import java.util.Map;
