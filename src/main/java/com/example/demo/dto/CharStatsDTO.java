@@ -1,4 +1,4 @@
-package com.testcase.testcasecgm.dto;
+package com.example.demo.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class CharStatsDTO {
     private Long count;
-    private Long averageLength;
+    private Double averageLength;
 
-    private Long averageChain;
+    private Double averageChain;
 }
