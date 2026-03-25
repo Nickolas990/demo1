@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.3 Safari/605.1.15" version="29.6.6">
+  <diagram name="Страница-1" id="HGfcXmSTUx9pbevLu4IZ">
+    <mxGraphModel dx="2056" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-3" edge="1" parent="1" source="XOVhqFkbi2EIiQQJ3Lbx-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="XOVhqFkbi2EIiQQJ3Lbx-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Реакции&lt;div&gt;(VKVIDEO/VKCLIP)&lt;/div&gt;&lt;div&gt;Точно ли сюда попадут реакции на видео&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="50" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-5" edge="1" parent="1" source="XOVhqFkbi2EIiQQJ3Lbx-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="XOVhqFkbi2EIiQQJ3Lbx-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-2" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="ReactiveRecom&lt;div&gt;(BlackBox)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Retrieval Cadidates (selector i2i)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="240" x="310" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-7" edge="1" parent="1" source="XOVhqFkbi2EIiQQJ3Lbx-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="XOVhqFkbi2EIiQQJ3Lbx-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="880" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Candidates" vertex="1">
+          <mxGeometry height="60" width="120" x="650" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Toggles" vertex="1">
+          <mxGeometry height="30" width="60" x="560" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-10" edge="1" parent="1" source="XOVhqFkbi2EIiQQJ3Lbx-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="XOVhqFkbi2EIiQQJ3Lbx-9" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Ranker (Base)&lt;div&gt;Light Formula&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="650" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-12" edge="1" parent="1" source="XOVhqFkbi2EIiQQJ3Lbx-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="XOVhqFkbi2EIiQQJ3Lbx-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-9" parent="1" style="whiteSpace=wrap;html=1;" value="&lt;span style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(236, 236, 236); text-decoration: none; float: none; display: inline !important;&quot;&gt;Ranker (Base)&lt;/span&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0); color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-line: none; text-decoration-thickness: auto; text-decoration-style: solid;&quot;&gt;Heavy Formula&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="650" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-14" edge="1" parent="1" source="XOVhqFkbi2EIiQQJ3Lbx-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="XOVhqFkbi2EIiQQJ3Lbx-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-11" parent="1" style="whiteSpace=wrap;html=1;" value="Blender (Meta)" vertex="1">
+          <mxGeometry height="60" width="120" x="450" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-13" parent="1" style="whiteSpace=wrap;html=1;" value="Candidates (TOP5)" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XOVhqFkbi2EIiQQJ3Lbx-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;1. Взять реакцию на ВКВидео&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;2. Реактивным рекомом &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;предложить кандидатов&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;3. проследить, что нужные кандидаты доезжают до пользователей(????)&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="470" x="-230" y="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
